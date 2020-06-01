@@ -1,0 +1,7 @@
+include ':app',':vpnazure'
+
+//include ':VPNAzureSDK'
+//project(':VPNAzureSDK').projectDir = new File('../VPNAzureAPI_SDK')
+
+include ':VPNAzure'
+project(':VPNAzure').projectDir = new File('../VPNAzure')

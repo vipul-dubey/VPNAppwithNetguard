@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<predefined>
+    <wifi
+        blocked="false"
+        package="root" />
+    <other
+        blocked="false"
+        package="root"
+        roaming="false" />
+
+    <wifi
+        blocked="false"
+        package="inc.bitwise.vpnapp" />
+    <other
+        blocked="false"
+        package="inc.bitwise.vpnapp"
+        roaming="false" />
+
+    <wifi
+        blocked="false"
+        package="com.google.android.apps.adm" />
+    <other
+        blocked="false"
+        package="com.google.android.apps.adm"
+        roaming="false" />
+
+    <wifi
+        blocked="false"
+        package="com.google.android.backuptransport" />
+    <other
+        blocked="false"
+        package="com.google.android.backuptransport" />
+
+    <wifi
+        blocked="false"
+        package="com.google.android.gms" />
+    <other
+        blocked="false"
+        package="com.google.android.gms" />
+
+    <wifi
+        blocked="false"
+        package="com.google.android.apps.gcs" />
+    <other
+        blocked="false"
+        package="com.google.android.apps.gcs"
+        roaming="false" />
+
+    <relation
+        package="com.android.vending"
+        related="com.google.android.gms,com.android.providers.downloads" />
+    <relation
+        package="com.android.chrome"
+        related="com.android.providers.downloads" />
+    <wifi
+        blocked="true"
+        package="com.android.chrome" />
+    <other
+        blocked="true"
+        package="com.android.chrome" />
+    <type
+        package="com.android.chrome"
+        system="false" />
+
+
+    <wifi
+        blocked="true"
+        package="com.facebook.katana" />
+    <other
+        blocked="true"
+        package="com.facebook.katana" />
+    <type
+        package="com.facebook.katana"
+        system="false" />
+
+    <wifi
+        blocked="true"
+        package="com.facebook.orca" />
+    <other
+        blocked="true"
+        package="com.facebook.orca" />
+
+    <type
+        package="com.facebook.orca"
+        system="false" />
+
+    <wifi
+        blocked="true"
+        package="com.google.android.youtube" />
+    <other
+        blocked="true"
+        package="com.google.android.youtube" />
+    <type
+        package="com.google.android.youtube"
+        system="false" />
+
+    <wifi
+        blocked="true"
+        package="com.skype.raider" />
+    <other
+        blocked="true"
+        package="com.skype.raider" />
+    <type
+        package="com.skype.raider"
+        system="false" />
+
+    <wifi
+        blocked="true"
+        package="com.twitter.android" />
+    <other
+        blocked="true"
+        package="com.twitter.android" />
+    <type
+        package="com.twitter.android"
+        system="false" />
+
+ <!--   <wifi
+        blocked="true"
+        package="com.whatsapp" />
+    <other
+        blocked="true"
+        package="com.whatsapp" />
+    <type
+        package="com.whatsapp"
+        system="false" />-->
+
+    <wifi
+        blocked="true"
+        package="com.instagram.android" />
+    <other
+        blocked="true"
+        package="com.instagram.android" />
+    <type
+        package="com.instagram.android"
+        system="false" />
+    <type
+        package="com.facebook.orca"
+        system="false" />
+    <type
+        package="com.google.android.youtube"
+        system="false" />
+</predefined>

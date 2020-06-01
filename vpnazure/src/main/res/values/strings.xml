@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VPNAzure</string>
+    <string name = "hostUrl">https://msaindiaservices.azurewebsites.net/api</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="CreateUserTable">CREATE TABLE User (UserId INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,IsCamera INTEGER,UserEmail TEXT, Facility TEXT, UUID TEXT )</string>
+
+    <string name="CreateDeviceTable">CREATE TABLE Device (CheckInStatus TEXT, IsNFCInProgress TEXT, LastScreenStatus TEXT)</string>
+
+    <string name="CreateAdminTable">CREATE TABLE Admin(UserId INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, MoblieNo TEXT,
+        EmailID TEXT, ViolationMailSent TEXT, PolicyViolationEmailID TEXT, PolicyViolationEmailPWD TEXT,
+       MSASupportEmailId TEXT,  AppCurrentVersion TEXT)</string>
+
+    <string name="CreateLoggerTable">CREATE TABLE Logger(LogID INTEGER PRIMARY KEY, Log TEXT , LogDate TEXT)</string>
+<string name="CreateUserImageTable">CREATE TABLE UserImage (id INTEGER PRIMARY KEY, imgdata BLOB,TAPIN TEXT,TAPOUT TEXT,Violationcount INTEGER)</string>
+    <string name="CreateRegTokenInfoTable">CREATE TABLE RegTokenInfo(Provider TEXT, SocialToken TEXT,AuthToken TEXT,RegistrationStatus TEXT,RegistrationDate TEXT)</string>
+    <string name="CreateSocialLoginRegTokenInfoTable">CREATE TABLE SocialLoginRegisterTokenInfo( SocialLoginToken TEXT, SocialLoginProvider TEXT)</string>
+
+    <string name="CreateAirplaneModeStatus">CREATE TABLE AirplaneModeStatus(AirplaneStatus TEXT,WiFiMailSentStatus TEXT)</string>
+
+
+<string name="GetUserimage">SELECT imgdata FROM UserImage</string>
+    <string name="GetUserDeviceFingerprint">SELECT UUID FROM User</string>
+<string name="GetUserTapInfo">SELECT TAPIN,Violationcount FROM UserImage</string>
+
+    <string name="GetUserNameAndPassword">SELECT UserName,Password FROM User</string>
+    <string name="GetCheckInStatus">SELECT CheckInStatus FROM Device</string>
+
+    <string name="GetRegInfoStatus">SELECT RegistrationStatus FROM RegTokenInfo</string>
+    <string name="GetRegDate">SELECT RegistrationDate FROM RegTokenInfo</string>
+
+    <string name="GetRegAuthToken">SELECT AuthToken FROM RegTokenInfo</string>
+    <string name="GetSocialToken">SELECT SocialToken FROM RegTokenInfo</string>
+    <string name="GetSocialTokenProvider">SELECT Provider FROM RegTokenInfo</string>
+
+    <string name="GetSocialLoginTokenProvider">SELECT SocialLoginProvider FROM SocialLoginRegisterTokenInfo</string>
+    <string name="GetSocialLoginToken">SELECT SocialLoginToken FROM SocialLoginRegisterTokenInfo</string>
+
+
+    <string name="GetNFCInProgressStatus">SELECT IsNFCInProgress FROM Device</string>
+    <string name="GetLastScreenStatus">SELECT LastScreenStatus FROM Device</string>
+    <string name="GetViolationMailSentValue">SELECT ViolationMailSent FROM Admin</string>
+    <string name="GetAdminInfo">SELECT A.EmailID,A.MoblieNo,U.Facility,U.UserEmail, A.AppCurrentVersion FROM Admin A inner join User U on A.UserId = U.UserId</string>
+    <string name="GetUserInfo">SELECT UserEmail FROM User</string>
+    <string name="GetLog">SELECT Log FROM Logger order by LogID desc</string>
+    <string name="GetUserId">SELECT UserId FROM User</string>
+
+    <string name="GetAirplaneStatus">SELECT AirplaneStatus FROM AirplaneModeStatus</string>
+    <string name="GetWiFiMailSentStatus">SELECT WiFiMailSentStatus FROM AirplaneModeStatus</string>
+
+    <string name="User_UserID">UserId</string>
+    <string name="User_UserEmail">UserEmail</string>
+    <string name="User_Facility">Facility</string>
+
+
+    <string name="Admin_MobileNo">MoblieNo</string>
+    <string name="Admin_EmailId">EmailID</string>
+    <string name="Admin_ViolationEmailSent">ViolationMailSent</string>
+    <string name="Admin_PolicyViolationEmailId">PolicyViolationEmailID</string>
+    <string name="Admin_PolicyViolationEmailPwd">PolicyViolationEmailPWD</string>
+    <string name="Admin_AppVersion">AppCurrentVersion</string>
+
+    <string name="Device_CheckInStatus">CheckInStatus</string>
+    <string name="Device_IsNFCInProgress">IsNFCInProgress</string>
+    <string name="Device_InternetCount">InternetCount</string>
+    <string name="Device_LastScreenStatus">LastScreenStatus</string>
+
+    <string name="SocialToken">SocialToken</string>
+    <string name="AuthToken">AuthToken</string>
+    <string name="RegistrationStatus">RegistrationStatus</string>
+    <string name="Provider">Provider</string>
+    <string name="RegistrationDate">RegistrationDate</string>
+
+    <string name="AirplaneModeStatus">AirplaneModeStatus</string>
+
+</resources>
+

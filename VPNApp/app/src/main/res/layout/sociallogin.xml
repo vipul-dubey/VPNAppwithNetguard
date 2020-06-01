@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/bookIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_launcher" />
+    <TextView
+        android:id="@+id/bookITextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookIconImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="VpnApp"
+        android:textColor="@color/colorSplashText"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-4dp"
+        android:foregroundGravity="bottom"
+        android:indeterminate="true"
+        android:padding="0dp"
+        android:theme="@style/ProgressBarStyle" />
+
+    <RelativeLayout
+        android:id="@+id/afterAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_above="@+id/sign_in_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/googleSignInButtonSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="gravity"
+        android:visibility="invisible"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>
